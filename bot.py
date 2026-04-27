@@ -52,7 +52,7 @@ AUCTION_CHANNEL_ID   = _env_int("AUCTION_CHANNEL_ID")
 # --- Google Sheets ---
 SHEET_URL              = os.getenv("SHEET_URL", "").strip()
 GOOGLE_CREDENTIALS_PATH = os.getenv("GOOGLE_CREDENTIALS_PATH", "credentials.json").strip()
-AUCTION_RESOURCE_BOOK   = os.getenv("AUCTION_RESOURCE_BOOK", "LMAO Resources").strip()
+AUCTION_RESOURCE_BOOK   = os.getenv("AUCTION_RESOURCE_BOOK", "Resources").strip()
 
 # --- Authorization roles for createplayer ---
 # Comma-separated role NAMES, e.g. "Gopher,Toggy,Gamemaster"
