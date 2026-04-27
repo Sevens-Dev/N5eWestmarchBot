@@ -1,4 +1,4 @@
-# LMAO Bot — Setup Guide
+# Westmarch Bot — Setup Guide
 
 Hi! This guide will help you get a Discord bot running on your computer. The bot lets people on your Discord server keep track of tabletop RPG characters, spend in-game money, and run weekly item auctions. Everything saves to a Google spreadsheet so the numbers don't get lost.
 
@@ -216,7 +216,7 @@ The bot can now read and write to your sheet!
 
 The bot has a feature where it can post random items for people to bid on. If you want to use it, you need a second spreadsheet for the items.
 
-1. Go to **https://sheets.google.com** and make another new sheet. Name it exactly `LMAO Resources`.
+1. Go to **https://sheets.google.com** and make another new sheet. Name it exactly `Resources`.
 2. Click the tab at the bottom (probably called "Sheet1") and rename it to `Auction`.
 3. Set up the columns like this. The bot expects items grouped by rank (E is easiest, S is the rarest). Each rank gets two columns: a name and a description.
 
@@ -251,7 +251,7 @@ Almost done! Now we tell the bot all the secret stuff it needs to know.
    - **`CREATEPLAYER_ROLES=`** The names of Discord roles that are allowed to create new players. The default is `Gamemaster`. If your role is called something else, put that name here. Multiple roles separated by commas.
    - **`SHEET_URL=`** Paste the URL of your main Google Sheet from Step 6 here.
    - **`GOOGLE_CREDENTIALS_PATH=`** This is just `credentials.json` (which is the default). Don't change it unless you put the file somewhere else.
-   - **`AUCTION_RESOURCE_BOOK=`** This is just `LMAO Resources` (the default). Only change it if you named your auction sheet something different in Step 8.
+   - **`AUCTION_RESOURCE_BOOK=`** This is just `Resources` (the default). Only change it if you named your auction sheet something different in Step 8.
 
 4. **Save the file.** Make sure when you save it, it's still called `.env` and not `.env.txt`. In Notepad, when you save, change "Save as type" to **"All Files"** to make sure it doesn't add `.txt`.
 
